@@ -443,11 +443,12 @@ td {
 
 #sidebar {
 	font-size: 0.8em;
-	opacity: 0.9;
+	opacity: 0.8;
 	padding: 3%;
 	width: 24%;
 	float: right;
 	border-left: 0;
+	line-height: 1.5em;
 	
 	ul {
 		margin-left: 0;
@@ -461,6 +462,10 @@ td {
 
 	td {
 		padding: 0.2em;
+	}
+
+	p {
+		margin: 0.6em 0;
 	}
 
 }
