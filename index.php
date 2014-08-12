@@ -54,7 +54,7 @@ if ( have_posts() ) {
 
 			<div class ="commentWithTwitter">
 				<?php 
-					$twitterMessage = "Hey @beirutspring, [write your comment here] " . get_permalink();
+					$twitterMessage = "Hey @beirutspring,\n--write your comment here--\n" . get_permalink();
 					$twitterURL = 'https://twitter.com/intent/tweet?text=' . urlencode( $twitterMessage );
 				?>
 				&rarr; Respond to this post <a href="<?= $twitterURL ?>">On Twitter</a>
