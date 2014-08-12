@@ -53,7 +53,7 @@ a:hover {
   display: block;
   margin: 0 auto;
   max-width: 1180px;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 0;
   overflow: auto; }
   #site-header .hgroup {
     overflow: hidden;
@@ -62,12 +62,12 @@ a:hover {
   #site-header h1 {
     float: left;
     font-family: "Open Sans", sans-serif;
-    font-size: 2.8em;
+    font-size: 2em;
     line-height: 1.5em;
     font-weight: bold;
     letter-spacing: -0.05em;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-    margin: 0 0 0 2%; }
+    margin: 0 0 0 3%; }
     #site-header h1 a {
       color: #000; }
       #site-header h1 a:hover {
@@ -79,12 +79,11 @@ a:hover {
   #site-header h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
-    font-style: italic;
     line-height: 1.2em;
-    float: right;
+    float: left;
     font-weight: normal;
-    margin: 1.5em 2% 0 2%;
-    color: #999; }
+    margin: 1.5em 2% 0 3%;
+    opacity: 0.8; }
 
 /* =Contents
 -------------------------------------------------------------- */
@@ -121,7 +120,7 @@ h1.widget-title {
   font-weight: bold; }
 
 h1 {
-  font-size: 2.4em;
+  font-size: 2em;
   margin: 1em 0 0.3em; }
 
 h2 {
@@ -218,7 +217,7 @@ pre {
   font-size: 0.9em; }
 
 input[type=text] {
-  border: 1px solid #dddddd;
+  border: 1px solid silver;
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -247,7 +246,7 @@ body .wp-caption {
   max-width: 94%;
   margin: 1em auto;
   padding: 2% 2% 0 2%;
-  border: 1px solid #dddddd;
+  border: 1px solid silver;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
@@ -275,7 +274,7 @@ body .wp-caption {
 article {
   margin: 0 0 2em 0;
   padding: 0 0 2em 0;
-  border-bottom: 1px solid #dddddd; }
+  border-bottom: 1px solid silver; }
 
 .entry-content {
   width: 100%;
@@ -331,6 +330,10 @@ td {
   border-top: 1px solid #ededed;
   padding: 1em 1em 1em 0; }
 
+.commentWithTwitter {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px; }
+
 /* =Sidebar
 -------------------------------------------------------------- */
 #content-area {
@@ -344,14 +347,23 @@ td {
   overflow: hidden; }
 
 #sidebar {
+  font-size: 0.8em;
+  opacity: 0.8;
   padding: 3%;
   width: 24%;
   float: right;
-  border-left: 1px solid #dddddd; }
+  border-left: 0;
+  line-height: 1.5em; }
+  #sidebar ul {
+    margin-left: 0; }
   #sidebar ul li {
-    line-height: 1.5em; }
+    list-style: none;
+    line-height: 1.5em;
+    padding: 5px 0; }
   #sidebar td {
     padding: 0.2em; }
+  #sidebar p {
+    margin: 0.6em 0; }
 
 /* =Numeric pagination
 -------------------------------------------------------------- */
@@ -366,7 +378,7 @@ td {
     height: 1.6em;
     line-height: 1.6em;
     text-align: center;
-    border: 1px solid #dddddd; }
+    border: 1px solid silver; }
   #numeric-pagination a {
     float: left;
     height: 1.3em;
@@ -395,7 +407,7 @@ ol.commentlist {
   ol.commentlist li.comment {
     list-style: none;
     background: #fafafa;
-    border: 1px solid #dddddd;
+    border: 1px solid silver;
     margin: 0 0 1.5em 0;
     padding: 0;
     border-radius: 6px;
@@ -422,14 +434,14 @@ ol.commentlist {
     font-style: normal; }
   ol.commentlist img.avatar {
     float: right;
-    border: 1px solid #dddddd;
+    border: 1px solid silver;
     margin: 0 0 1.5em 1.5em; }
   ol.commentlist .comment-reply-link {
     background: #eee;
     border-radius: 6px;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
-    border: 1px solid #dddddd;
+    border: 1px solid silver;
     font-size: 0.8em;
     padding: 0.4em 0.8em;
     color: #333; }
@@ -491,7 +503,7 @@ ol.commentlist {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   background: #fafafa;
-  border: 1px solid #dddddd;
+  border: 1px solid silver;
   color: #666; }
 
 .gform_wrapper input[type=email],
@@ -527,7 +539,7 @@ ol.commentlist {
   font-size: 1.2em;
   background: #eee;
   color: #333;
-  border: 1px solid #dddddd;
+  border: 1px solid silver;
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -565,7 +577,7 @@ ol.commentlist {
   font-size: 1em; }
 
 #site-info {
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid silver;
   padding: 1.6em 0; }
 
 /* =Responsive
@@ -602,7 +614,7 @@ ol.commentlist {
   float: right; }
 .rtl #sidebar {
   float: left;
-  border-right: 1px solid #dddddd;
+  border-right: 1px solid silver;
   border-left: none; }
 .rtl #numeric-pagination li {
   float: right; }

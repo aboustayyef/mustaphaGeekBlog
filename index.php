@@ -50,7 +50,17 @@ if ( have_posts() ) {
 					the_excerpt();
 				}
 				?>
-			</div><!-- .entry-content --><?php
+			</div><!-- .entry-content -->
+
+			<div class ="commentWithTwitter">
+				<?php 
+					$twitterMessage = "Hey @beirutspring, [write your comment here] " . get_permalink();
+					$twitterURL = 'https://twitter.com/intent/tweet?text=' . urlencode( $twitterMessage );
+				?>
+				&rarr; Respond to this post <a href="<?= $twitterURL ?>">On Twitter</a>
+			</div>
+
+			<?php
 
 			// Don't display meta information on static pages
 			if ( ! is_page() ) { ?>
@@ -95,6 +105,7 @@ if ( have_posts() ) {
 				// Edit link
 				edit_post_link( __( 'Edit', 'hellish' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' );
 				?>
+
 			</footer><!-- .entry-meta --><?php
 			} ?>
 
