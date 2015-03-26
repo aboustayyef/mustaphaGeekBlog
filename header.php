@@ -24,6 +24,20 @@
 </head>
 <body <?php body_class(); ?>>
 
+
+<!-- Facebook JS SDK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=269731313194548&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- End Facebook JS SDK -->
+
+
 <header id="site-header" role="banner">
 	<div class="hgroup">
 		<h1>
