@@ -51,14 +51,14 @@ if ( have_posts() ) {
 				}
 				?>
 			</div><!-- .entry-content -->
-
+<!-- 
 			<div class ="commentWithTwitter">
 				<?php 
 					$twitterMessage = "Hey @beirutspring,\n--write your comment here--\n" . get_permalink();
 					$twitterURL = 'https://twitter.com/intent/tweet?text=' . urlencode( $twitterMessage );
 				?>
 				&rarr; Respond to this post <a href="<?= $twitterURL ?>">On Twitter</a>
-			</div>
+			</div> -->
 
 			<?php
 
@@ -97,10 +97,10 @@ if ( have_posts() ) {
 				}
 
 				// Comments info.
-				if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) { ?>
-				<span class="sep"> | </span>
-				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'hellish' ), __( '1 Comment', 'hellish' ), __( '% Comments', 'hellish' ) ); ?></span><?php
-				}
+				// if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) { ?>
+				// <span class="sep"> | </span>
+				// <span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'hellish' ), __( '1 Comment', 'hellish' ), __( '% Comments', 'hellish' ) ); ?></span><?php
+				// }
 
 				// Edit link
 				edit_post_link( __( 'Edit', 'hellish' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' );
