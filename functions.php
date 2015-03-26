@@ -4,7 +4,7 @@
  * Primary class used to load the theme
  *
  * Some of the code used here was adapted from the Underscores theme from Automattic.
- * 
+ *
  * @copyright Copyright (c), Ryan Hellyer
  * @license http://www.gnu.org/licenses/gpl.html GPL
  * @author Ryan Hellyer <ryanhellyer@gmail.com>
@@ -92,7 +92,7 @@ class Hellish_Setup {
 			'customize.php'
 		);
 	}
-	
+
 	/*
 	 * Add scripts and styles to the theme settings page
 	 */
@@ -209,7 +209,7 @@ class Hellish_Setup {
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 */
 	public function theme_setup() {
-	
+
 		// Make theme available for translation
 		load_theme_textdomain( 'hellish', get_template_directory() . '/languages' );
 
@@ -245,7 +245,7 @@ class Hellish_Setup {
 	 * @param $wp_customize Theme Customizer object
 	 */
 	public function customize_register( $wp_customize ) {
-	
+
 		// Theme Footer
 		$wp_customize->add_setting( 'header-text', array(
 			'type'              => 'option',
@@ -261,7 +261,7 @@ class Hellish_Setup {
 			'label'             => __( 'Header text', 'hellish' ),
 			'type'              => 'text',
 		) );
-	
+
 	}
 
 	/**
@@ -287,7 +287,7 @@ class Hellish_Setup {
 	public function title_tag( $title ) {
 
 		// Add the site name.
-		$title .= get_bloginfo( 'name' );
+	//	$title .= get_bloginfo( 'name' );
 
 		return $title;
 	}
